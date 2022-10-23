@@ -1,0 +1,44 @@
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section{
+	@include box;
+}
+.layout {
+	@include box;
+	max-width: 1170px;
+	margin:0 auto;
+  @media (max-width:1170px){
+    padding: 0 15px;
+  }
+}
+
+body{
+    font-family: 'GT Eesti Pro Display';
+    overflow-x: hidden;
+    color: #141B41;
+    background-color: #E5E5E5;
+    margin: auto;
+}
+.stop-scrolling{
+  overflow-y: hidden;
+}
+h3{
+    font-family: 'GT Eesti Pro Display';
+    font-size: 2.5em;
+    line-height: 125%;
+    font-weight: 400;
+    color: #141B41;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px #7e7e80;
+    transition-duration: 1s;
+    &:hover{
+     transform: scale(1.01);
+     
+    }
+    @media (max-width:768px){
+       text-align: center;            
+    }
+}

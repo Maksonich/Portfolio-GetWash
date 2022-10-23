@@ -1,0 +1,114 @@
+.become__partner {
+    .become-partner_content {
+        .img-phone-map {
+            display: none;
+        }
+        .title{
+            margin-top: 140px;
+            text-align: center;
+            @media (max-width:768px){
+                   margin-top: 70px;
+            }
+            h3{
+                font-size: 2em;
+                line-height: 125%;
+            }   
+            p{
+                margin: 17px 60px auto;
+                font-family: 'GT Eesti Pro Display';
+                font-weight: 350;
+                font-size: 1.125em;
+                line-height: 140%;
+                color: #72727E; 
+            }
+        }
+    }
+    .description__instrument{
+        margin-top: 60px;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            @media (max-width:768px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+            li{
+                margin-right: 30px;
+                padding: 30px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 1 1 auto;
+                align-items: center;
+                max-width: 210px;
+                height: 200px;
+                background-color: rgb(255, 251, 251);
+                border-radius: 10px;
+                transition-duration: 1s;
+                @media (max-width:911px){
+                    padding: 10px 10px;
+                }
+                @media (max-width:768px){
+                    min-width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:hover{
+                    transition-duration: 0.2;
+                    transform: scale(1.07);
+                }
+                .icon__services {
+                    margin-bottom: 35px;
+                    img{
+                        padding: 15px ;
+                        border-radius: 6px;
+                        background: #fff;
+                    }
+                }
+                .description {
+                    font-family: 'GT Eesti Pro Display';
+                    font-weight: 350;
+                    font-size: 1em;
+                    line-height: 140%;
+                    text-align: center;
+                }
+            }
+        }
+        .become-partner__button{
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            @media (max-width:768px){
+                margin-top: 30px;
+            }
+            .partner__button{
+                margin: 50px 0;
+                a{
+                    font-family: 'GT Eesti Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    font-size: 1.125rem;
+                    color: #EEEEEE;
+                    white-space: nowrap;
+                    transition-duration: 0.5s;
+                    background-color: $colorBtn; 
+                    padding: 23px 60px;
+                    border-radius: 6px;
+                    &:hover{
+                        background-color: #3459d4;
+                    }
+                    @media (max-width:768px){
+                        padding: 14px 40px;
+                    }   
+                }
+            }
+        }
+    }   
+}

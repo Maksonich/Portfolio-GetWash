@@ -1,0 +1,87 @@
+.quick-start {
+    margin-top: 20px;
+    .quick-start_content{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:768px){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .quick__img{
+            .img__calendar-major {
+                display: block;
+            }
+      
+        }
+        .quick-start__description {
+            @media (max-width:912px){
+                   width: 70%;
+            }
+            ul{
+                @media (max-width:912px){
+                   margin-left: 10px;
+                }
+                li{
+                    display: flex;
+                    align-items: flex-start; 
+                    margin-bottom: 50px;
+                    @media (max-width:768px){
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+                    .icons{
+                        padding: 15px;
+                        background: rgba(247, 248, 253, 1);
+                        border-radius: 8px;
+                        margin-right: 40px;
+                        position: relative;
+                        transition-duration: 1s;
+                        @media (max-width:768px){
+                            margin-right: 0;
+                        }
+                        &:hover{
+                            transition-duration: 0.5s;
+                            transform: scale(1.1);
+                            
+                        } 
+                    } 
+                    .description{
+                        h4{
+                            font-family: 'GT Eesti Pro Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.5em;
+                            line-height: 135%;
+                            color: #141B41;
+                            margin-bottom: 10px;
+                            transition-duration: 1s;
+                            &:hover{
+                                transition-duration: 1s;
+                              transform: translate(5px);
+                            }
+                            
+                        }
+                            p{
+                                font-family: 'GT Eesti Pro Display';
+                                font-weight: 350;
+                                font-size: 1.125em;
+                                line-height: 135%;
+                                color: #72727E;
+                                transition-duration: 1s;
+                                &:hover{
+                                    transition-duration: 1s;
+                                    transform: translate(5px);
+                                }
+                              
+                            }   
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

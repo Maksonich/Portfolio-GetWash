@@ -1,0 +1,133 @@
+.reviews {
+    margin-top: 100px;
+    .review-content {
+        h3{
+            display: block;
+            line-height: 140%;
+        }
+        .review__comment{
+            display: flex;
+            justify-content: space-between;
+            min-width: 100%;
+            @media (max-width:768px){
+                align-items: center;
+                margin-bottom: 100px;
+            }
+            .comment{
+                margin-right: 50px;
+                @media (max-width:600px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin: 0 25px; 
+                }
+                @media (max-width:440px){
+                    margin: 0 10px;
+                }
+                 p{
+                    max-width: 70%;
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 1.125em;
+                    line-height: 140%;
+                    color: #72727E;
+                    @media (max-width:440px){
+                        max-width: 95%;
+                    }
+                }
+                .author {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 60px;
+                    @media (max-width:600px){
+                        margin-top: 30px;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .photo {
+                        border-radius: 50%;
+                    }
+                    .names {
+                        padding-left: 35px;
+                        @media (max-width:768px){
+                            padding-top: 15px;
+                            padding-left: 0;
+                        }
+                        .name {
+                            font-weight: 500;
+                            font-size: 1.5em;
+                            line-height: 140%;
+                        }
+                        .driver {
+                            font-weight: 350;
+                            font-size: 1.125em;
+                            line-height: 140%;
+                            color: #72727E;
+                        }
+                    }
+                    
+                }
+            }  
+            
+           
+        }
+    }
+    
+}
+.slick-arrow{
+    font-size: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #F7F8FD;
+    cursor: pointer;
+    z-index: 20;
+    border: solid 1px #72727E;
+   @media (max-width:768){
+   }
+}
+.slick-prev{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    background-image: url(../images/icon/chevron-left.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 11px;
+    transition-duration: 0.5s;
+    @media (max-width:600){
+        display: absolute;
+        top:auto;
+        bottom: 0;
+        right: 50px;
+    }
+    &:hover{
+        transition-duration: 0.5s;
+        background-color: #2bbaf7;
+        background-position: 9px 11px;
+    }
+    &:active{
+        background-color: $colorBtn;
+        background-position: 8px 11px;
+    }
+}
+.slick-next{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-image: url(../images/icon/chevron-right.svg);
+    background-repeat: no-repeat;
+    background-position: 13px 11px;
+    transition-duration: 0.5s;
+    &:hover{
+        transition-duration: 0.5s;
+        background-color: #2bbaf7;
+        background-position: 14px 11px;
+    }
+    &:active{
+        background-color: #3459d4;
+        background-position: 15px 11px;
+    }
+}
